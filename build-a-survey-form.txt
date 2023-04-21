@@ -1,0 +1,83 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dairy Shoppe (survey)</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Dairy Shoppe Survey</h1>
+    <p id="description">Your feedback is valuable to improving our service</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" type="text" required placeholder="Enter your name"  /></label>
+        <label id="email-label" for="email">Email:  <input id="email" type="email" required placeholder="Enter your email"/></label>
+        <label id="number-label" for="number">Number of Outlets: <input id="number" type="number" placeholder="number of outlets you know" min="0" max="4" required/></label>
+      </fieldset>
+      <fieldset>
+        <label>What is your most prefered product?</label>
+        <select id="dropdown" class="otherInputs">
+          <option value="1">morogo</option>
+          <option value="2">madila</option>
+          <option value="3">honey</option>
+          <option value="4">phane</option>
+          <option value="5">kgodu</option>
+        </select>
+        <label>How likely are you to return?</label>
+        <label>1. <input type="radio" name="rating" value="1" class="inline" /> </label>
+        <label>2. <input type="radio" name="rating" value="2" class="inline"/>  </label>
+        <label>3. <input type="radio" name="rating" value="3" class="inline"/> </label>
+        <label>4. <input type="radio" name="rating" value="4" class="inline"/> </label>
+        <label>5. <input type="radio" name="rating" value="5" class="inline"/> </label>
+      </fieldset>
+      <fieldset>
+        <label><h4>Which mall do you most visit?</h4></label>
+        <label>Station <input type="checkbox"  class="inline" value="Sta"/></label>
+        <label>Fieldsmall  <input type="checkbox"  class="inline" value="Fie" /></label>
+        <label>Sarona City  <input type="checkbox"  class="inline" value="Sar" /></label>
+        <label>Airport Junction <input type="checkbox"  class="inline" value="Air" /> </label>
+        <label><h4>Any Suggestions?</h4></label>
+        <textarea>Type suggestions here</textarea>      
+      </fieldset>
+      <input type="submit" id="submit"/>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  background-image: linear-gradient(red ,purple ,blue );
+}
+input {
+  background-color: yellow;
+  width: 100%;
+}
+.otherInputs{
+  width: 100%;
+}
+fieldset{
+  border-color: brown;
+  border-width: 5px;
+  margin: 5px;
+  padding: 25px;
+}
+label{
+  display: block;
+  color: white; 
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+textarea{
+  width: 100%
+}
+
+** end of undefined **
+
